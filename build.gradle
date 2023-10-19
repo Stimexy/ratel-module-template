@@ -4,19 +4,23 @@ import java.nio.charset.StandardCharsets
 
 buildscript {
 
-    repositories {
-        repositories {
-            maven {
-                name "aliyunmaven"
-                url "https://maven.aliyun.com/repository/public"
-            }
-            maven {
-                name "aliyunGoogle"
-                url "https://maven.aliyun.com/repository/google"
-            }
 
+    repositories {
+        maven {
+            name "aliyunmaven"
+            url "https://maven.aliyun.com/repository/public"
         }
+        maven {
+            name "aliyunGoogle"
+            url "https://maven.aliyun.com/repository/google"
+        }
+        maven {
+            name "Inti"
+            url "https://nexus.iinti.cn/repository/maven-public/"
+        }
+
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
         classpath 'net.sf.proguard:proguard-gradle:6.1.1'
@@ -34,17 +38,19 @@ allprojects {
     }
 
     repositories {
-        repositories {
-            maven {
-                name "aliyunmaven"
-                url "https://maven.aliyun.com/repository/public"
-            }
-            maven {
-                name "aliyunGoogle"
-                url "https://maven.aliyun.com/repository/google"
-            }
-
+        maven {
+            name "aliyunmaven"
+            url "https://maven.aliyun.com/repository/public"
         }
+        maven {
+            name "aliyunGoogle"
+            url "https://maven.aliyun.com/repository/google"
+        }
+        maven {
+            name "Inti"
+            url "https://nexus.iinti.cn/repository/maven-public/"
+        }
+
     }
 }
 

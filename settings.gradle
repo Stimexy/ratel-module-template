@@ -1,3 +1,4 @@
 include ':demoapp',
+        ':crack_etao',
         ':createhelper',
         ':crack-demoapp'
